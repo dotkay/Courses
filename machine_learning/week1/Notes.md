@@ -15,3 +15,8 @@ There are two main categories of Machine Learning problems.
 * Unsupervised Learning
 
 #### Supervised Learning
+ 
+Given a set of labelled data (where label is a prediction value given some sets of data values), a supervised learning algorithm fits an equation or a shape to the data such that once a new data set is provided it can use the equation to predict a value. There are two main categories of Supervised Learning problems:
+
+* Regression 
+* Classification
