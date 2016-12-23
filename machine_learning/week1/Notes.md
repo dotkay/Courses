@@ -22,3 +22,13 @@ Given a set of labelled data (where label is a prediction value given some sets 
 * Classification
 
 *Regression* algorithms provide (predicts) continuous valued outputs, while *Classification* algorithms provide discrete valued outputs. 
+
+**Examples**
+
+Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
+
+We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two discrete categories.
+
+- Regression - Given a picture of a person, we have to predict their age on the basis of the given picture
+- Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
+
