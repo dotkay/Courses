@@ -6,3 +6,12 @@ Example: playing checkers
 E = the experience of playing many games of checkers
 T = the task of playing checkers.
 P = the probability that the program will win the next game.
+
+
+#### Types of Machine Learning problems:
+
+There are two main categories of Machine Learning problems.
+* Supervised Learning
+* Unsupervised Learning
+
+#### Supervised Learning
