@@ -20,3 +20,5 @@ Given a set of labelled data (where label is a prediction value given some sets 
 
 * Regression 
 * Classification
+
+*Regression* algorithms provide (predicts) continuous valued outputs, while *Classification* algorithms provide discrete valued outputs. 
