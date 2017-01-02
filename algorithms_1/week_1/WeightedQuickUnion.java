@@ -22,8 +22,11 @@ public class WeightedQuickUnion
 	public WeightedQuickUnion(int N)
 	{
 		id = new int[N];
+		sz = new int[N];
 		for (int i = 0; i < N; i++) {
 			id[i] = i;
+			// initializing size of each node to be 1 
+			sz[i] = 1;
 		}
 	}
 	
@@ -53,7 +56,20 @@ public class WeightedQuickUnion
 			return;
 		
 		if (sz[proot] < sz[qroot]) {
-			
+			// root of q becomes root of p
+			id[proot] = qroot;
+			sz[qroot] += sz[proot];
+		}
+		else {
+			// root of p becomes root of q
+			id[qroot] = proot;
+			sz[proot] += sz[qroot];
+		}
+	}
+	
+	public void print_result(int N) {
+		for (int i = 0; i < N; i++) {
+			System.out.format("%d ", id[i]);
 		}
 	}
 	
@@ -72,6 +88,7 @@ public class WeightedQuickUnion
 				System.out.format("(%d %d)%n", p, q);
 			}
 		}
+		WQU.print_result(N);
+		scan.close();
 	}
-
 }

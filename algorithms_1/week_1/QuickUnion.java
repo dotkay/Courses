@@ -37,6 +37,12 @@ public class QuickUnion
 		int qroot = root(q);
 		id[proot] = qroot;
 	}
+	
+	public void print_result(int N) {
+		for (int i = 0; i < N; i++) {
+			System.out.format("%d ", id[i]);
+		}
+	}
 
 	// Client code
 	public static void main(String[] args)
@@ -53,6 +59,7 @@ public class QuickUnion
 				System.out.format("(%d %d)%n", p, q);
 			}
 		}
+		QU.print_result(N);
 		scan.close();
 	}
 
